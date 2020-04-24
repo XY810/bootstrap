@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Manage Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .list-group-horizontal .list-group-item {
+            display: inline-block;
+        }
+        .list-group-horizontal .list-group-item {
+            margin-bottom: 0;
+            margin-left:-4px;
+            margin-right: 0;
+        }
+        .list-group-horizontal .list-group-item:first-child {
+            border-top-right-radius:0;
+            border-bottom-left-radius:4px;
+        }
+        .list-group-horizontal .list-group-item:last-child {
+            border-top-right-radius:4px;
+            border-bottom-left-radius:0;
+        }
+	</style>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-text pull-left" href="#" style="font-weight: bold;">UIC - WORKSHOP 后台管理模板</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> 收件箱 <span class="label-warning" style="color: white">&nbsp;5&nbsp;</span></a></li>
+                <li  class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> 管理员<span class="caret"></span></span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="panel-group table-responsive" role="tablist">
+                <div class="panel leftMenu">
+                    <!-- 利用data-target指定要折叠的分组列表 -->
+                    <div id="collapseListGroup1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="panel-heading small "data-toggle="collapse" role="tab" >
+                                    <div class="panel-title glyphicon glyphicon-home">
+                                        首页
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="panel-heading" id="collapseListGroupHeading2" data-toggle="collapse" data-target="#collapseListGroup2" role="tab" >
+                                    <h4 class="panel-title glyphicon glyphicon-file">
+                                        页面模块<span class="glyphicon glyphicon-chevron-right right"></span>
+                                    </h4>
+                                </div>
+                                <div id="collapseListGroup2" class="panel-collapse collapse right" role="tabpanel" aria-labelledby="collapseListGroupHeading2">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <span class="glyphicon glyphicon-ok"></span> 个人资料<span class="glyphicon glyphicon-star pull-right"></span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="glyphicon glyphicon-question-sign"></span> 帮助页
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="glyphicon glyphicon-th"></span> 相册页面<span class="label-primary pull-right" style="color: white;">&nbsp;&nbsp;24&nbsp;</span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="glyphicon glyphicon-calendar"></span> 系统日志
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="glyphicon glyphicon-remove-circle"></span> 404
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="panel-heading "data-toggle="collapse" role="tab" >
+                                    <div class="panel-title glyphicon glyphicon-list-alt">
+                                        表格
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="panel-heading "data-toggle="collapse" role="tab" >
+                                    <div class="panel-title glyphicon glyphicon-edit">
+                                        表单
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="panel-heading "data-toggle="collapse" role="tab" >
+                                    <div class="panel-title glyphicon glyphicon-log-out">
+                                        注销
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="panel-heading "data-toggle="collapse" role="tab" >
+                                    <p class="panel-title glyphicon glyphicon-bookmark">&nbsp;公告</p>
+                                    <br>
+                                    <br>
+                                    <p class="">ECHO'Hello world';<br>——HELLO WORLD</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <ol class="breadcrumb">
+              <li><a href="#">首页</a></li>
+              <li>一些常用模块</li>
+            </ol>
+            <div class="col-md-10">
+                <div class="panel panel-default">
+                    <div class="panel-body" style="box-shadow:inset 1px -1px 1px #eee, inset -1px 1px 1px #eee;">
+                        <div class="col-md-2 text-center" style="width:25%;border-right: 1px solid #eee;">
+                            <div style="border-radius: 50%; background-color:#eee; width:40px; height:40px; margin:0 auto; text-align: center">
+                                <h4 class="glyphicon glyphicon-file"></h4><br>
+                            </div>
+                            <span style="color: #51B738">新增页面<br>230</span>
+                        </div>
+                        <div class="col-md-2 text-center" style="width:25%;border-right: 1px solid #eee;">
+                            <div style="border-radius: 50%; background-color:#eee; width:40px; height:40px; margin:0 auto; text-align: center">
+                                <h4 class="glyphicon glyphicon-briefcase"></h4><br>
+                            </div>
+                            <span style="color: #f0ae4f">成交订单<br>308
+                            </span>
+                        </div>
+                        <div class="col-md-2 text-center" style="width:25%;border-right: 1px solid #eee;">
+                            <div style="border-radius: 50%; background-color:#eee; width:40px; height:40px; margin:0 auto; text-align: center">
+                                <h4 class="glyphicon glyphicon-retweet"></h4><br>
+                            </div>
+                            <span style="color: #d95450">昨日访问<br>80082
+                            </span>
+                        </div>
+                        <div class="col-md-2 text-center" style="width:25%;">
+                            <div style="border-radius: 50%; background-color:#eee; width:40px; height:40px; margin:0 auto; text-align: center">
+                                <h4 class="glyphicon glyphicon-tree-conifer"></h4><br>
+                            </div>
+                            <span style="color: #438cca">在线用户<br>3000
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>用户名</th>
+                            <th>最后成交任务</th>
+                            <th>成交订单</th>
+                            <th>管理</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Clark</td>
+                            <td>Business management</td>
+                            <td><span class="label-success" style="color: white">&nbsp;&nbsp;+20 &nbsp;</span></td>
+                            <td>
+                                <button type="button" class="btn dropdown-toggle active btn-xs" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-cog"></span>
+                                    <span class="caret"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>风清扬</td>
+                            <td>公司LOGO设计</td>
+                            <td><span class="label-danger" style="color:#f2f2f2">&nbsp;&nbsp;+2 &nbsp;</span></td>
+                            <td>
+                                <button type="button" class="btn dropdown-toggle active btn-xs" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-cog"></span>
+                                    <span class="caret"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>詹姆斯</td>
+                            <td>开发一款业务数据软件</td>
+                            <td><span class="label-warning" style="color: white">&nbsp;&nbsp;+10 &nbsp;</span></td>
+                            <td>
+                                <button type="button" class="btn dropdown-toggle active btn-xs" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-cog"></span>
+                                    <span class="caret"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>云适配</td>
+                            <td>适配所有网站</td>
+                            <td><span class="label-primary" style="color: white">&nbsp;&nbsp;+50 &nbsp;</span></td>
+                            <td>
+                                <button type="button" class="btn dropdown-toggle active btn-xs" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-cog"></span>
+                                    <span class="caret"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>呵呵呵</td>
+                            <td>基兰会获得BUFF</td>
+                            <td><span class="label-default" style="color: white">&nbsp;&nbsp;+22 &nbsp;</span></td>
+                            <td>
+                                <button type="button" class="btn dropdown-toggle active btn-xs" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-cog"></span>
+                                    <span class="caret"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" id="collapseListGroupHeading3" data-toggle="collapse" data-target="#collapseListGroup3" >
+                                文件上传
+                                <span class="caret right"></span>
+                            </div>
+                            <!-- .panel-collapse和.collapse标明折叠元素 .in表示要显示出来 -->
+                            <div id="collapseListGroup3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseListGroupHeading3">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <p class="glyphicon glyphicon-open" style="font-weight: bold;">&nbsp;Kong-cetian.Mp3</p>
+                                        <p>3.3 of 5MB -5 mins - 1MB/Sec</p>
+                                        <div class="progress progress-striped">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
+                                                82%
+                                                <span class="sr-only">82% Complete</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p class="glyphicon glyphicon-ok" style="font-weight: bold">&nbsp;好人-cetian.Mp3</p>
+                                        <p>3.3 of 5MB -5 mins - 3MB/Sec</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p class="glyphicon glyphicon-ok" style="font-weight: bold">&nbsp;其实都没有.Mp3</p>
+                                        <p>3.3 of 5MB -5 mins - 3MB/Sec</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" id="collapseListGroupHeading4" data-toggle="collapse" data-target="#collapseListGroup4" >
+                                任务 task
+                                <span class="caret right"></span>
+                            </div>
+                            <!-- .panel-collapse和.collapse标明折叠元素 .in表示要显示出来 -->
+                            <div id="collapseListGroup4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseListGroupHeading4">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <p class="glyphicon glyphicon-open" style="color: grey;">&nbsp;Posted on 25/1/2120 by Jhon Clark</p>
+                                        <p>The starting place for exploring business management;helping new managers get started and experienced managers get better.</p>
+                                        <div class="btn-toolbar" role="toolbar">
+                                            <div class="btn-group btn-group-sm">
+                                                <button type="button" class="btn btn-default active"><span class="glyphicon glyphicon-ok"></span></button>
+                                                <button type="button" class="btn btn-default active"><span class="glyphicon glyphicon-pencil"></span></button>
+                                                <button type="button" class="btn btn-default active"><span class="glyphicon glyphicon-remove"></span></button>
+                                            </div>
+                                            <button type="button" class="pull-right">删除</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p class="glyphicon glyphicon-open" style="color: grey;">&nbsp;Posted on 25/1/2120 by Jhon Clark</p>
+                                        <p>基兰和狗熊出现在不同阵营时。基兰会获得BUFF，“装甲熊憎恨者”。狗熊会获得BUFF，“时光老人憎恨者”。</p>
+                                        <div class="btn-toolbar" role="toolbar">
+                                            <div class="btn-group btn-group-sm">
+                                                <button type="button" class="btn btn-default active"><span class="glyphicon glyphicon-ok"></span></button>
+                                                <button type="button" class="btn btn-default active"><span class="glyphicon glyphicon-pencil"></span></button>
+                                                <button type="button" class="btn btn-default active"><span class="glyphicon glyphicon-remove"></span></button>
+                                            </div>
+                                            <button type="button" class="pull-right">删除</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	</div>
+</nav>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
